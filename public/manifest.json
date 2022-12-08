@@ -1,6 +1,6 @@
 {
-  "short_name": "Lucy",
-  "name": "Lucy-Prototype",
+  "short_name": "prototype",
+  "name": "Prototype",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,5 +8,5 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "."
 }

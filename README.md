@@ -1,12 +1,10 @@
-## Lucy All New Project
+## React 18 with TypeScript
 
 #### Get Started This Project
 ```
-    npm install or npm install --legacy-peer-deps
-
+    npm install
     npm start
 ```
 
-
-#### Lucy On React18 & TypeScript
+#### Info
 - All types are Managed in 'src/types' directory
