@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import { debounce } from 'lodash';
 
 export default function useForm<T>(init: T) {
     const [formData, setFormData] = useState<T>(init);
@@ -8,10 +9,17 @@ export default function useForm<T>(init: T) {
             ...prevState,
             [key]: value,
         }))
-    }, [formData]);
+    }, [init]);
+
+    const reset = useCallback(() => {
+        setFormData({
+            ...init,
+        })
+    }, [init])
 
     return {
         formData,
-        setData
+        setData: debounce(setData, 200),
+        resetData: reset,
     }
 }

@@ -38,7 +38,6 @@ export type HocProps = {
 
 // TestComp
 export type User = {
-	id: string,
-	token: string,
-	name: string,
+	userid: string,
+	password: string,
 }

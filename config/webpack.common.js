@@ -1,4 +1,5 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -99,6 +100,8 @@ const appConfig = {
         };
       },
     }),
+    // 환경변수에 접근하기 위한 웹팩 플러그인
+    new Dotenv(),
   ],
 };
 
